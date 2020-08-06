@@ -4,6 +4,330 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practical-7</title>
+    <style>
+        .container
+        {
+            border: 2px solid black;
+            width: auto;
+            padding: 15px;
+        }
+        .header
+        {
+            border: 2px solid brown;
+            width: 100%;
+            background-color: brown;
+            height: 70px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+        }
+        .banner
+        {
+            border:2px solid burlywood;
+            width: 100%;
+            height: 515px;
+            margin-top: 15px;
+            background-color: burlywood;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+        }
+        .section1
+        {
+            border: 2px solid blue;
+            width: 100%;
+            height: auto;
+            margin-top: 15px;
+        }
+        #section1::after
+        {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .section1-1
+        {
+            border: 2px solid red;
+            display: flex;
+            height: 60px;
+            justify-content: center;
+            align-items: center;
+            color:black;
+            font-size: 30px;
+        }
+        .circularImages
+        {
+            border: 2px solid green;
+            width: 100%;
+            height: 300px;
+        }
+        #circularImages::after
+        {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .firstImage
+        {
+            border: 2px solid orangered;
+            border-radius: 50%;
+            background-color: orangered;
+            width: 20%;
+            height: 300Px;
+            margin-left: 30px;
+            float: left;
+        }
+        .secondImage
+        {
+            border: 2px solid orangered;
+            background-color: orangered;
+
+            border-radius: 50%;
+            margin-left: 70px;
+
+            width: 20%;
+            height: 300Px;
+            
+            float: left;
+        }
+        .thirdImage
+        {
+            border: 2px solid orangered;
+            background-color: orangered;
+
+            border-radius: 50%;
+            margin-left: 70px;
+
+            width: 20%;
+            height: 300Px;
+            
+            float: left;
+        }.fourthImage
+        {
+            border: 2px solid orangered;
+            background-color: orangered;
+
+            border-radius: 50%;
+            margin-left: 70px;
+
+            width: 20%;
+            height: 300Px;
+            
+            float: left;
+        }
+        .section2
+        {
+            border: 2px solid orange;
+            width: auto;
+            height: auto;
+            margin-top: 15px;
+        }
+        #section2::after
+        {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .section2-1
+        {
+            border: 2px solid red;
+            display: flex;
+            height: 60px;
+
+            justify-content: center;
+            align-items: center;
+            color:black;
+            font-size: 30px;
+        }
+        .section2-2
+        {
+            border: 2px solid red;
+            width: auto;
+            height: 515px;
+        }
+        #section2-2::after
+        {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .LHS
+        {
+            border: 2px solid aqua;
+            width: 49%;
+            height: 515px;
+            float: left;
+            background-color: aqua;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            color: white;
+            
+        }
+        .RHS
+        {
+            border: 2px solid orchid;
+            width: 49%;
+            height: 515px;
+            float: right;
+        }
+        .RHS::after
+        {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .artical1
+        {
+            border: 2px solid orchid;
+            width: auto;
+            height: 150px;
+            background-color: orchid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+        }
+        .artical2
+        {
+            border: 2px solid orchid;
+            width: auto;
+            height: 150px;
+            margin-top: 26px;
+            background-color: orchid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+        }
+        .artical3
+        {
+            border: 2px solid orchid;
+            width: auto;
+            height: 150px;
+            margin-top: 26px;
+            background-color: orchid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+        }
+        .section3
+        {
+            border: 2px solid orange;
+            width: auto;
+            height: auto;
+            margin-top: 15px;
+        }
+        #section3::after
+        {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .section3-1
+        {
+            border: 2px solid red;
+            display: flex;
+            height: 60px;
+
+            justify-content: center;
+            align-items: center;
+            color:black;
+            font-size: 30px;
+        }
+        .boxes
+        {
+            border:2px solid peru;
+            width: auto;
+            height: 500px;
+        }
+        .firstBox
+        {
+            border:2px solid royalblue;
+            width: 23%;
+            height: 500px;
+            margin-left: 13px;
+            background-color: royalblue;
+            float: left;
+        }
+        .secondBox
+        {
+            border:2px solid royalblue;
+            width: 23%;
+            height: 500px;
+            margin-left: 25px;
+            background-color: royalblue;
+            float: left;
+
+            
+        }
+        .thirdBox
+        {
+            border:2px solid royalblue;
+            width: 23%;
+            height: 500px;
+            margin-left: 25px;
+
+            background-color: royalblue;
+            float: left;
+
+        }
+        .fourthBox
+        {
+            border:2px solid royalblue;
+            width: 23%;
+            height: 500px;
+            margin-left: 25px;
+
+            background-color: royalblue;
+            float: left;
+
+        }
+        .section4
+        {
+            border: 2px solid gray;
+            width: auto;
+            height: auto;
+            margin-top: 15px;
+        }
+        #section4::after
+        {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .section4-1
+        {
+            border: 2px solid red;
+            display: flex;
+            height: 60px;
+
+            justify-content: center;
+            align-items: center;
+            color:black;
+            font-size: 30px;
+        }
+        .footer
+        {
+            border: 2px solid springgreen;
+            width: 100%;
+            background-color: springgreen;
+            height: 70px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+        }
+
+
+    </style>
 </head>
 <body>
     <div class="container">
@@ -20,11 +344,13 @@
     </div>
     <div class="section2">
         <div class="section2-1">Section2</div>
+        <div class="section2-2">
         <div class="LHS">Main Content</div>
         <div class="RHS">
             <div class="artical1">Artical1</div>
             <div class="artical2">Artical2</div>
             <div class="artical3">Artical3</div>
+        </div>
         </div>
     </div>
     <div class="section3">
