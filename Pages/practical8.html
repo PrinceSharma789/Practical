@@ -10,6 +10,7 @@
             border: 5px solid aqua;
             width: auto;
             padding: 15px;
+            position: relative;
         }
         .header
         {
@@ -18,6 +19,9 @@
             background-color: grey;
             height: 70px;
             color: white;
+            position: sticky;
+            top: 0px;
+            z-index: 2;
             
         }
         .header ul
@@ -49,23 +53,34 @@
         }
         .banner
         {
-            border: burlywood;
+            
             width: 100%;
-            height: 515px;
+            height: 600px;
             margin-top: 15px;
-            background-color: burlywood;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 40px;
+            
+            position: relative;
+            
+        }
+        .banner img
+        {
+            width: 100%;
+            height: 100%;
+        }
+        .banner h1
+        {
+           position: absolute;
+           top: 20px;
+           left: 20px;
+           font-size: 50px;
+           color: white;
         }
         .section1
         {
             border:  blue;
             width: 100%;
             height: auto;
-            margin-top: 15px;
+            margin-top: 100px;
+            font-weight: bold;
         }
         #section1::after
         {
@@ -95,20 +110,19 @@
             display: block;
             clear: both;
         }
-        .firstImage
+        .firstImage img
         {
-            border:  orangered;
+            
             border-radius: 50%;
-            background-color: orangered;
+            
             width: 20%;
-            height: 300Px;
+        
             margin-left: 30px;
             float: left;
         }
-        .secondImage
+        .secondImage img
         {
-            border: orangered;
-            background-color: orangered;
+            
 
             border-radius: 50%;
             margin-left: 70px;
@@ -118,10 +132,9 @@
             
             float: left;
         }
-        .thirdImage
+        .thirdImage img
         {
-            border: orangered;
-            background-color: orangered;
+            
 
             border-radius: 50%;
             margin-left: 70px;
@@ -130,10 +143,9 @@
             height: 300Px;
             
             float: left;
-        }.fourthImage
+        }.fourthImage img
         {
-            border: orangered;
-            background-color: orangered;
+            
 
             border-radius: 50%;
             margin-left: 70px;
@@ -148,7 +160,8 @@
             border:  orange;
             width: auto;
             height: auto;
-            margin-top: 15px;
+            margin-top: 100px;
+            font-weight: bold;
         }
         #section2::after
         {
@@ -181,23 +194,30 @@
         }
         .LHS
         {
-            border: aqua;
+            
             width: 49%;
             height: 515px;
             float: left;
-            background-color: aqua;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 40px;
+            background-color:grey;
+            overflow: hidden;
+            
             color: white;
             
+        }
+        .LHS h1
+        {
+           margin: 15px; 
+        }
+        .LHS p
+        {
+            margin: 15px;
         }
         .RHS
         {
             border: orchid;
             width: 49%;
             height: 515px;
+            font-weight: bold;
             float: right;
         }
         .RHS::after
@@ -206,47 +226,82 @@
             display: block;
             clear: both;
         }
-        .artical1
+        .project1 
         {
-            border: orchid;
+            
             width: auto;
-            height: 150px;
-            background-color: orchid;
+            height: 160px;
+            
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 40px;
+            position: relative;
+            
         }
-        .artical2
+        .project1 h2
         {
-            border: orchid;
-            width: auto;
-            height: 150px;
-            margin-top: 32px;
-            background-color: orchid;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 40px;
+            position: absolute;
+            top: 0px;
         }
-        .artical3
+        .project1 img
         {
-            border: orchid;
+            width: 100%;
+            height: 100%;
+        }
+        .project2
+        {
+            
             width: auto;
-            height: 150px;
-            margin-top: 32px;
-            background-color: orchid;
+            height: 160px;
+            margin-top: 17px;
+            
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 40px;
+            position: relative;
+            
+        }
+        .project2 h2
+        {
+            position: absolute;
+            top: 0px;
+            ;
+        }
+        .project2 img
+        {
+            width: 100%;
+            height: 100%;
+        }
+        .project3
+        {
+            
+            width: auto;
+            height: 160px;
+            margin-top: 17px;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            
+        }
+        .project3 h2
+        {
+            position: absolute;
+            top: 0px;
+        }
+        .project3 img
+        {
+            width: 100%;
+            height: 100%;
         }
         .section3
         {
             border: orange;
             width: auto;
             height: auto;
-            margin-top: 15px;
+            margin-top: 100px;
+            font-weight: bold;
         }
         #section3::after
         {
@@ -269,56 +324,112 @@
         {
             border: peru;
             width: auto;
-            height: 400px;
+            height: 500px;
         }
+        .boxes h2
+        {
+            text-align: center;
+        }
+        .boxes p
+        {
+            margin: 10px;
+            color: white;
+        }
+        .readMore
+        {
+            background-color: red;
+            width: 100%;
+            height: 35px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .readMore a
+        {
+            color: white;
+            text-decoration: none;
+        }
+        .readMore:hover
+        {
+            background-color: blue;
+            
+        }
+        .readMore a:hover
+        {
+            color: black;
+        }
+        
         .firstBox
         {
-            border: royalblue;
+
             width: 23%;
-            height: 400px;
+            height: 500px;
             margin-left: 13px;
-            background-color: royalblue;
+            background-color:lightgrey;
             float: left;
         }
+        .firstBox img
+        {
+            width: 100%;
+            height: 200px;
+        }
+        
         .secondBox
         {
-            border:royalblue;
+            
             width: 23%;
-            height: 400px;
+            height: 500px;
             margin-left: 25px;
-            background-color: royalblue;
+            background-color: lightgrey;
             float: left;
 
             
         }
+        .secondBox img
+        {
+            width: 100%;
+            height: 200px;
+        }
         .thirdBox
         {
-            border: royalblue;
+            
             width: 23%;
-            height: 400px;
+            height: 500px;
             margin-left: 25px;
 
-            background-color: royalblue;
+            background-color: lightgrey;
             float: left;
 
         }
+        .thirdBox img
+        {
+            width: 100%;
+            height: 200px;
+        }
         .fourthBox
         {
-            border: royalblue;
+            
             width: 23%;
-            height: 400px;
+            height: 500px;
             margin-left: 25px;
 
-            background-color: royalblue;
+            background-color: lightgrey;
             float: left;
 
+        }
+        .fourthBox img
+        {
+            width: 100%;
+            height: 200px;
         }
         .section4
         {
             border: gray;
             width: auto;
             height: auto;
-            margin-top: 15px;
+            margin-top: 100px;
+            font-weight: bold;
         }
         #section4::after
         {
@@ -339,15 +450,13 @@
         }
         .footer
         {
-            border: springgreen;
+            
             width: 100%;
-            background-color: springgreen;
-            height: 70px;
+            background-color: lightslategrey;
+            height: 120px;
             color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 40px;
+            text-align: center;
+            
         }
     </style>
 </head>
@@ -356,46 +465,120 @@
         <div class="header">
             <ul>
                 <li><a href="">HOME</a></li>
-                <li><a href="">ABOUT US</a></li>
-                <li><a href="">TEAM</a></li>
-                <li><a href="">TECHNOLOGIES</a></li>
-                <li><a href="">CONTACT</a></li>
+                <li><a href="#about us">ABOUT US</a></li>
+                <li><a href="#team">TEAM</a></li>
+                <li><a href="#technology">TECHNOLOGIES</a></li>
+                <li><a href="#contact">CONTACT</a></li>
 
             </ul>
         </div>
-        <div class="banner"><img src=""</div>
+        <div class="banner">
+            <h1>Practical-8</h1>
+            <img src="../img/prac8.jpg">
+        </div>
         <div class="section1">
-            <div class="section1-1">Section1</div>
+            <div class="section1-1"><a name="team">Team Members</a></div>
             <div class="circularImages">
-                <div class="firstImage"></div>
-                <div class="secondImage"></div>
-                <div class="thirdImage"></div>
-                <div class="fourthImage"></div>
+                <div class="firstImage"><img src="../img/prac8TeamMem-1.png"></div>
+                <div class="secondImage"><img src="../img/prac8TeamMem-2.png"></div>
+                <div class="thirdImage"><img src="../img/prac8TeamMem-3.png"></div>
+                <div class="fourthImage"><img src="../img/prac8TeamMem-4.png"></div>
             </div>
         </div>
         <div class="section2">
-            <div class="section2-1">Section2</div>
+            <div class="section2-1"><a name="about us">About Us</a></div>
             <div class="section2-2">
-            <div class="LHS">Main Content</div>
+            <div class="LHS">
+                <h1>About Projects</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam atque nam odio ad imp
+                    natus sunt accusantium iste voluptatum hic quia exercitationem doloremque laudantium delectus eaque,
+                     quae magni nobis reprehenderit.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro tenetur magnam consequuntur
+                     dignissimos quam accusamus fuga vel quasi cupiditate totam pariatur rerum libero dolore delectus odit officiis, molestiae minus ea, voluptatibus veniam dicta harum atque in! Adipisci, sit totam? Qui incidunt aperiam culpa aliquid hic atque numquam at accusamus aspernatur, iure cumque labore veniam commodi ratione facere. Rerum, ipsum ipsam cumque excepturi ullam molestias architecto labore delectus neque eum magnam voluptatem distinctio est quia ratione nesciunt hic voluptatum obcaecati dolorem nemo nostrum. Dolorem enim, autem voluptas sint exercitationem vero voluptatem labore quod distinctio quia commodi voluptate modi officiis ut, porro quam at harum inventore rem impedit aliquid consectetur accusamus velit. Perferendis unde omnis quibusdam corrupti deserunt! Veritatis fugit, facilis corrupti ex saepe omnis sequi minus temporibus culpa blanditiis beatae? Blanditiis minima numquam eveniet, beatae sapiente necessitatibus recusandae porro, laborum iste culpa soluta illum. Unde odit laboriosam accusantium voluptatum, reiciendis saepe eius vero, quos ipsum rem nobis ipsa. Animi distinctio inventore corrupti. Sequi porro optio suscipit ven
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa itaque assumenda quidem quo aperiam fugit quae pariatur, dolores voluptas atque nisi ullam, eum molestias. Culpa eaque voluptatibus similique fugiat corrupti! Nisi repellat impedit, soluta nihil quis quos, cum consequuntur quisquam accusamus doloribus quibusdam possimus saepe natus. Facilis 
+                    quis Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dolorem eum aliquid asperiores possimus 
+                    placeat veniam, laudantium iusto nihil reprehenderit pariatur autem atque sint hic alias praesentium ullam omnis necessitatibus? error ipsam provident, perferendis quia corrupti omnis obcaecati quaerat molestias, libero odio exercitationem esse nam sunt.</p>
+            </div>
             <div class="RHS">
-                <div class="artical1">Artical1</div>
-                <div class="artical2">Artical2</div>
-                <div class="artical3">Artical3</div>
+                <div class="project1">
+                    <h2>Project-1</h2>
+                    <img src="../img/prac8Project-1.jpg">
+                </div>
+                <div class="project2">
+                    <h2>Project-2</h2>
+                    <img src="../img/prac8Project-2.jpeg">
+                </div>
+                <div class="project3">
+                    <h2>Project-3</h2>
+                    <img src="../img/prac8Project-3.jpg">
+                </div>
             </div>
             </div>
         </div>
         <div class="section3">
-            <div class="section3-1">Section3</div>
+            <div class="section3-1"><a name="technology">Technologies Used</a></div>
             <div class="boxes">
-                <div class="firstBox"></div>
-                <div class="secondBox"></div>
-                <div class="thirdBox"></div>
-                <div class="fourthBox"></div>
+                <div class="firstBox">
+                    <img src="../img/html.png">
+                    <h2>Introduction to html</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima dicta porro fugia
+                        Dolore ipsam, repellat tempora minus, in ex nostrum aliquid nisi nesciunt suscipit odio, nemo voluptates 
+                        possimus corrupti molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus cum eveniet consectetur officiis 
+                        aliquam neque, nemo placeat, temporer lorem  
+                        repudiandae tempora.
+                    </p>
+                    <div class="readMore"><a href="#">Read More</a></div>
+
+                </div>
+                <div class="secondBox">
+                    <img src="../img/CSS.jpg">
+                    <h2>Introduction to CSS</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima dicta porro fugia
+                        Dolore ipsam, repellat tempora minus, in ex nostrum aliquid nisi nesciunt suscipit odio, nemo voluptates 
+                        possimus corrupti molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus cum eveniet consectetur officiis 
+                        aliquam neque, nemo placeat, temperor lorem 
+                        repudiandae tempora.
+                    </p>
+                    <div class="readMore"><a href="#">Read More</a></div>
+
+
+                </div>
+                <div class="thirdBox">
+                    <img src="../img/JS.png">
+                    <h2>Introduction to JavaScript</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima dicta porro fugia
+                        Dolore ipsam, repellat tempora minus, in ex nostrum aliquid nisi nesciunt suscipit odio, nemo voluptates 
+                        possimus corrupti molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus cum eveniet consectetur officiis 
+                        aliquam neque, nemo placeat, temporer lorem
+                        repudiandae tempora.
+                    </p>
+                    <div class="readMore"><a href="#">Read More</a></div>
+
+
+                </div>
+                <div class="fourthBox">
+                    <img src="../img/Bootstrap.jpg">
+                    <h2>Introduction to Bootstrap</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima dicta porro fugia
+                        Dolore ipsam, repellat tempora minus, in ex nostrum aliquid nisi nesciunt suscipit odio, nemo voluptates 
+                        possimus corrupti molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus cum eveniet consectetur officiis 
+                        aliquam neque, nemo placeat, temporer lorem
+                        repudiandae tempora.
+                    </p>
+                    <div class="readMore"><a href="#">Read More</a></div>
+
+
+                </div>
             </div>
         </div>
         <div class="section4">
-            <div class="section4-1">Section4</div>
-            <div class="footer">Footer</div>
+            <div class="section4-1"><a name="contact">Contact</a></div>
+            <div class="footer">
+                <h2>Website Template for Practical-8 @<a href="https://www.beta-labs.in/" target="_blank">beta-labs</a></h2>
+                <br>
+                <a href="">Back to Home</a>
+                
+            </div>
         </div>
         </div>
 </body>
