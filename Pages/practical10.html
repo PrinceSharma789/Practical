@@ -17,6 +17,7 @@
         {
             width: 100%;
             
+            
         }
         .header
         {
@@ -25,29 +26,41 @@
            background-color: grey;
            position: fixed;
            top: 0%;
+           display: flex;
+           justify-content: center;
+           text-align: center;
         }
         .header h2
         {
             color: white;
             line-height: 70px;
-            text-align: center;
+        
         }
+        .header img{
+            width: 70px;
+            height: 70px;
+            margin-right:10px ;
+        }
+        
         .content
         {
             width: 100%;
-            margin-top: 90px;
-            float: right;
+            
+            text-align: center;
+            transition-delay: .7s;
+        
         }
         .content img{
-            display: block;
+            
             width: 600px;
             height: 400px;
-            margin: auto;
+        
 
         }
         .content p
         {
             margin-top:15px ;
+            font-size: x-large;
         }
         .sideBar
         {
@@ -57,8 +70,6 @@
            width: 20%;
            background-color: grey;
            height: 100%;
-           
-           transition: .4s;
         }
         .sideBar ul li
         {
@@ -69,6 +80,7 @@
             font-size: 20px;
             font-weight: bold;
             font-family: Arial, Helvetica, sans-serif;
+            
 
         }
 
@@ -125,9 +137,17 @@
         #chk:checked ~ .show-btn{
             opacity: 0;
         }
-        #chk:checked ~ .content{
-            width: 80%;
+        #chk:checked ~ .content {
             float: right;
+            width: 80%;
+        }
+        @media (max-width: 780px){
+            #chk:checked ~ .sideBar{
+                width: 100%;
+            }
+            .header h2{
+                display: none;
+            }
         }
         
         
@@ -137,6 +157,7 @@
 <body>
     <div class="container">
         <div class="header">
+            <img src="../img/fullStackLogo.png">
             <h2>Full Stack</h2>
         </div>
         <div class="content">
@@ -145,19 +166,19 @@
                  ullam voluptatum expedita laborum quae modi amet porro eligendi deserunt quis. Veniam nihil perferendis libero odio! Perferendis 
                 quibusdam consequatur iusto voluptatum consequuntur beatae porro veritatis sit libero, ullam quis consectetur quod? Tempora?</p>
         </div>
-          <input type="checkbox" name="" id="chk">        
-          <label for="chk" class="show-btn">
-              <i class="fa fa-bars"></i>
-          </label>
-          <label for="chk" class="hide-btn">
-              <i class="fa fa-times"></i>
-          </label>
+        <input type="checkbox" name="" id="chk">        
+        <label for="chk" class="show-btn">
+            <i class="fa fa-bars"></i>
+        </label>
+        <label for="chk" class="hide-btn">
+            <i class="fa fa-times"></i>
+        </label>
         <div class="sideBar">
             <ul>
                 <li ><a href="#"><i class="fa fa-home"><span>  Home</span></i></a></li>
                 <li ><a href="#"><i class="fa fa-user"><span>  About</span></i></a></li>
-                <li ><a href="#"><i class="fa fa-rss"><spann>  Team</spann></i></a></li>
-                <li ><a href="#"><i class="fa fa-tasks"><span>  Technologies</span></i></a></li>
+                <li ><a href="#"><i class="fa fa-rss"><spann>  Services</spann></i></a></li>
+                <li ><a href="#"><i class="fa fa-tasks"><span>  Blog</span></i></a></li>
                 <li ><a href="#"><i class="fa fa-id-card"><span>  Contact</span></i></a></li>
 
                 
