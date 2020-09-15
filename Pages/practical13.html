@@ -25,7 +25,7 @@
         
         footer {
             width: 100%;
-            padding: 10px;
+            
             background-color: #26272b;
         }
         footer h2{
@@ -36,7 +36,8 @@
             width: 100%;
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: space-evenly;
+            margin: 10px;
 
         
         }
@@ -44,10 +45,14 @@
             width: 40%;
             color: gray;
         }
+        .categories ul{
+            left: 0px;
+        }
         .categories li{
             list-style: none;
             margin-bottom: 5px;
             font-size: 16px;
+            left: 0px;
         }
         .categories li a{
             text-decoration: none;
@@ -152,6 +157,14 @@
             font-size: 20px;
 
         }
+        .sec-4 {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: gray;
+            height: 90px;
+        }
     </style>
 </head>
 <body>
@@ -215,6 +228,11 @@
                     <li><a href="#"><i class="fa fa-youtube"></i></a></li>
                 </ul>
             </section>
+            <secction class="sec-4">
+                <p>Copyright © 2020 All rights reserved by
+                    <a href="#">betalabs</a>
+                </p>
+            </secction>
         </section>
     </footer>
 
